@@ -1,0 +1,40 @@
+.qna-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.question-form,
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 0 50px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 3px 3px gray;
+  width: 35vw;
+}
+
+.answer-form {
+  height: 20vh;
+}
+
+.question-input,
+.answer-input {
+  width: 20vw;
+  height: 5vh;
+  margin: 0 30px 50px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px gray;
+}
+
+.button-language {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.qna-container-button {
+  height: 3vh;
+  margin: 50px 10px 0 0;
+}
