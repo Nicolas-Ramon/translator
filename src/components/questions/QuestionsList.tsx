@@ -1,8 +1,15 @@
-import * as React from 'react';
-import '../qna.css';
-import Question from './Question';
+import * as React from "react";
+import "../qna.css";
+import Question from "./Question";
 
-class QuestionsList extends React.Component<any, any> {
+interface IProps {
+  questions: string[];
+  changeQuestion: any;
+}
+
+interface IState {}
+
+class QuestionsList extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {};
@@ -21,12 +28,11 @@ class QuestionsList extends React.Component<any, any> {
               index={index}
               changeQuestion={changeQuestion}
             />
-          )
+          );
         })}
       </div>
-    )
+    );
   }
-
 }
 
 export default QuestionsList;
